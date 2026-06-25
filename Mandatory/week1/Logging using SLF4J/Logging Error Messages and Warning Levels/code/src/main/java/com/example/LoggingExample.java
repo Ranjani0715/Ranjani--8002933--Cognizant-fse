@@ -10,11 +10,8 @@ public class LoggingExample {
 
     public static void main(String[] args) {
 
-        logger.error("This is an ERROR message");
-        logger.warn("This is a WARNING message");
-        logger.info("This is an INFO message");
-        logger.debug("This is a DEBUG message");
+        logger.error("This is an error message");
 
-        System.out.println("Logging example executed successfully!");
+        logger.warn("This is a warning message");
     }
 }

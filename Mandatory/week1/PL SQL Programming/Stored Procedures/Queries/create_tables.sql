@@ -1,0 +1,22 @@
+CREATE TABLE Accounts (
+    AccountID NUMBER PRIMARY KEY,
+    AccountType VARCHAR2(20),
+    Balance NUMBER
+);
+
+CREATE TABLE Employees (
+    EmployeeID NUMBER PRIMARY KEY,
+    EmployeeName VARCHAR2(50),
+    Department VARCHAR2(30),
+    Salary NUMBER
+);
+
+INSERT INTO Accounts VALUES (101,'SAVINGS',10000);
+INSERT INTO Accounts VALUES (102,'SAVINGS',20000);
+INSERT INTO Accounts VALUES (103,'CURRENT',15000);
+
+INSERT INTO Employees VALUES (1,'John','IT',50000);
+INSERT INTO Employees VALUES (2,'Mary','HR',40000);
+INSERT INTO Employees VALUES (3,'David','IT',60000);
+
+COMMIT;
