@@ -1,0 +1,13 @@
+h1{
+    text-align:center;
+    margin:30px;
+}
+
+.profile-card{
+    width:350px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    text-align:center;
+}

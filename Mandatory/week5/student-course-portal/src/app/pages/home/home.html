@@ -1,0 +1,59 @@
+<h1>{{ title }}</h1>
+
+<p>{{ description }}</p>
+
+<div class="profile">
+
+  <img
+    [src]="profileImage"
+    width="120"
+    height="120"
+    alt="Student Profile">
+
+  <h2>{{ studentName }}</h2>
+
+  <button
+    [disabled]="buttonDisabled"
+    (click)="enrollCourse()">
+    Enroll Now
+  </button>
+
+  <p class="success">
+    {{ statusMessage }}
+  </p>
+
+</div>
+
+<hr>
+
+<h2>Update Student Name</h2>
+
+<div class="input-section">
+  <input
+    type="text"
+    [(ngModel)]="studentInput"
+    placeholder="Enter your name">
+</div>
+
+<h3>Hello {{ studentInput }} 👋</h3>
+
+<hr>
+
+<div class="stats">
+
+  <div class="card">
+    <h3>{{ coursesAvailable }}</h3>
+    <p>Courses Available</p>
+  </div>
+
+  <div class="card">
+    <h3>{{ enrolledCourses }}</h3>
+    <p>Enrolled Courses</p>
+  </div>
+
+  <div class="card">
+    <h3>{{ currentGPA }}</h3>
+    <p>Current GPA</p>
+  </div>
+
+</div>
